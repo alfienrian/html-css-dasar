@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p { /* no 1 */
+            color: red;
+        }
+        div > p { /* no 2 */
+            background-color: yellow;
+        }
+        div + p { /* no 3 */
+            background-color: darkgray;
+        }
+        div ~ p { /* no 4 */
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph. Selector ini mengambil elemen div dan p.</p>
+        <p>This is a paragraph. Selector ini mengambil elemen div dan semua child element p </p>
+    </div>
+    <p>This is a paragraph. Selector ini mengambil elemen div dan element p yang bertetangga dengan elemen div</p>
+    <p>This is a paragraph. Hampir sama seperti selector (+), selector ini mengambil elemen div dan semua elemen p yang bertetanga dengan elemen div</p>
+</body>
+</html>

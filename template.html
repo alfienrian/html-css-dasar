@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website PNM</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      header {
+        background-color: blue;
+        padding: 16px;
+        margin-bottom: 16px;
+        line-height: 0.5;
+      }
+      .judul {
+        color: yellow;
+      }
+      .subjudul {
+        color: white;
+        font-size: larger;
+      }
+      main {
+        overflow: auto;
+      }
+      aside {
+        border-style: dashed;
+        border-color: darkblue;
+        line-height: 2;
+        height: 300px;
+        margin-bottom: 24px;
+        margin-left: 8px;
+        width: 30%;
+        float: left;
+      }
+      aside a {
+        padding: 12px 20px;
+        color: black;
+        text-decoration: none;
+      }
+      aside a:hover {
+        text-decoration: underline;
+        font-weight: 600;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      article{
+        width: 50%;
+        padding-top: 8px;
+        float: right;
+        margin-right: 100px;
+      }
+      article img {
+        display: block;
+        margin: 0 auto;
+      }
+      article > * {
+        text-align: center;
+      }
+      .article-title {
+        font-size: 28px;
+        margin-bottom: 2px;
+      }
+      .article-subtitle {
+        font-size: 22px;
+        margin-top: 2px;
+      }
+      .deskripsi {
+        color: red;
+        max-width: 600px;
+        min-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+      }
+      footer {
+        background-color: lightblue;
+        padding: 4px;
+        padding-right: 26px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="judul">Halo CSS !</h1>
+      <p class="subjudul">Ini adalah website CSS saya</>
+    </header>
+    <main>
+      <aside>
+        <ul>
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+            <li><a href="#">Menu 6</a></li>
+        </ul>
+      </aside>
+      <article>
+        <img src="gambar/icon.png" alt="Logo PNM" width="100px" />
+        <h1 class="article-title"><b>TI</b></h1>
+        <p class="article-subtitle">Politeknik Negeri Madiun</p>
+        <p class="deskripsi">
+          Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang berkualitas,
+          inovatif dan berdaya saing Nasional
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>Amro Alfien Syachrian Nadzief | 233307004 | TI-2A</p>
+    </footer>
+  </body>
+</html>
